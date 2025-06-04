@@ -1,114 +1,154 @@
-body {
-  background-color: black;
-  margin: 0;
-  padding: 0;
+ body{
+    background-color: black;
+    /* padding: 0;
+    margin: 0; */
+}
+.hero-section{
+    background-color: rgb(37, 46, 39);
+    border-radius: 0.9rem;
+    padding: 0.5rem;
+    padding-left: 2rem;
+    Width: 1452px;
+    Height: 209px;
+}
+h1{
+    font-weight: lighter; 
+    font-family: Poppins;
 }
 
-.hero-section {
-  background-color: rgb(37, 46, 39);
-  border-radius: 0.9rem;
-  padding: 1rem 2rem;
-  max-width: 100%;
-  width: 95%;
-  height: auto;
-  margin: auto;
-}
+.all{
+    display: flex;
+    justify-content: space-between;
 
-h1 {
-  font-weight: lighter;
-  font-family: Poppins, sans-serif;
-  color: white;
 }
-
-.all {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 1rem;
-  margin-top: 1rem;
-}
-
 .duration,
 .task,
 .butt {
-  margin-bottom: 8px;
-  flex: 1 1 100%;
+  margin-bottom: 8px; /* reduce space between divs */
 }
 
-select {
-  height: 3rem;
-  width: 100%;
-  max-width: 180px;
-  border-radius: 40px;
-  border: 1px solid #d4d864;
-  background-color: black;
-  color: #d4d864;
-  text-align: center;
-  appearance: none;
+select{
+    height: 3rem;
+    width: 180px;
+    border-radius: 40px;
+    border: 1px solid #d4d864;
+    background-color: black;
+    color: white;
+    text-align: center;
+    appearance: none;
+    color: #d4d864;
 }
 
-#input-task {
-  width: 100%;
-  max-width: 646px;
-  height: 2.8rem;
-  border-radius: 40px;
+#input-task{
+    width: 646px;
+    height: 2.8rem;
+    border-radius: 40px;
   color: white;
-  padding-left: 20px;
-  border: 1px solid #d4d864;
-  background-color: black;
+  padding-left: 20px; /* Adds space inside the input */
+    border: 1px solid #d4d864;
+}
+input{
+        background-color: black;
+        align-content: space-around;
+}
+#but{
+    width: 150px;
+    height: 3rem;
+    background-color: #A5A763;
+    border-radius: 40px;
+    border: 1px solid #d4d864;
 }
 
-input {
-  background-color: black;
+.dur{
+    width: 560px;
+    height: 47px;
+    display: flex;
+    justify-content: space-between;
+    color: #a7a87c;
+   
+    margin-left: auto;
 }
 
-#but {
-  width: 150px;
-  height: 3rem;
-  background-color: #A5A763;
-  border-radius: 40px;
-  border: 1px solid #d4d864;
-  color: black;
+.alll{
+    width: 87px;
+    border: 1px solid #DADDFF;
+    border-radius: 40px;
+    /* padding-top: 13px; */
+    padding-right: 20px;
+    padding-bottom: 15px;
+    padding-left: px;
+}
+p{
+    margin-left: 1.8rem;
+}
+.daily{
+    width: 105px;
+    border: 1px solid #DADDFF;
+    border-radius: 40px;
+    align-items: center;
+       /* padding-top: 13px; */
+    padding-right: 20px;
+    padding-bottom: 13px;
+    padding-left: 5px;
+
+}
+.weekly{
+    width: 120px;
+    border: 1px solid #DADDFF;
+    border-radius: 40px;
+       /* padding-top: 13px; */
+    padding-right: 20px;
+    padding-bottom: 13px;
+    padding-left: 4px;
+}
+.monthly{
+    width: 126px;
+    border: 1px solid #DADDFF;
+    border-radius: 40px;
+       /* padding-top: 13px; */
+    padding-right: 20px;
+    padding-bottom: 13px;
+    padding-left: 3px;
+}
+.yearly{
+    width: 102px;
+    border: 1px solid #DADDFF;
+    border-radius: 40px;
+       /* padding-top: 13px; */
+    padding-right: 20px;
+    padding-bottom: 13px;
+    padding-left: 3px;
 }
 
-.dur {
-  width: 100%;
-  max-width: 560px;
-  height: auto;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  color: #a7a87c;
-  margin: 1rem auto;
-  gap: 10px;
+
+tr{
+    border-radius: 40rem;
+    /* box-shadow: 1px 1px 0px 0px  #d4d864; */
+
+    
 }
 
-.alll {
-  width: 87px;
-  border: 1px solid #DADDFF;
-  border-radius: 40px;
-  padding-right: 20px;
-  padding-bottom: 15px;
+
+
+
+butto{
+    background-color: #DADDFF;
 }
 
-p {
-  margin-left: 1.8rem;
-  color: white;
-}
 
-tr {
-  border-radius: 40rem;
-}
-
-butto {
-  background-color: #DADDFF;
-}
 
 /* Filter Buttons */
+.dur {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
 .filter-btn {
   background: #1f1f1f;
   color: white;
-  padding: 0.5rem 1.5rem;
+ padding-right: 30px;
   border-radius: 20px;
   cursor: pointer;
   border: 1px solid white;
@@ -122,8 +162,9 @@ butto {
 
 /* Task Row Styling */
 .task-row {
-  border-radius: 40px;
-  border-bottom: 1px solid rgb(182, 174, 63);
+ 
+  border-radius: 40px 40px 40px 40px;    /* Rounded bottom corners */
+   border-bottom: 1px solid rgb(182, 174, 63); /* Only bottom border */
   padding: 15px;
   margin-bottom: 10px;
   display: flex;
@@ -131,9 +172,9 @@ butto {
   align-items: center;
   color: #f5f5f5;
   background-color: #111;
-  flex-wrap: wrap;
 }
 
+/* Icons only (no button background or border) */
 .action-icons span {
   margin-left: 10px;
   cursor: pointer;
@@ -147,69 +188,4 @@ butto {
 
 .action-icons span:hover {
   color: whitesmoke;
-}
-
-/* ---------------- Media Queries ---------------- */
-
-/* Tablets and below */
-@media (max-width: 992px) {
-  .all {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .dur {
-    justify-content: center;
-    max-width: 100%;
-  }
-
-  #input-task,
-  select,
-  #but {
-    width: 100%;
-    max-width: none;
-  }
-
-  #but {
-    margin-top: 0.5rem;
-  }
-
-  .task-row {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-}
-
-/* Small devices (phones) */
-@media (max-width: 576px) {
-  h1 {
-    font-size: 1.2rem;
-    text-align: center;
-  }
-
-  .hero-section {
-    padding: 1rem;
-  }
-
-  .filter-btn {
-    width: 100%;
-    text-align: center;
-  }
-
-  .dur {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .task-row {
-    font-size: 0.9rem;
-    padding: 10px;
-  }
-
-  .action-icons span {
-    font-size: 1rem;
-    padding: 6px;
-    width: 25px;
-    height: 25px;
-  }
-} 
+}  
