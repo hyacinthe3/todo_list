@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 
 // Import CSS styling
-import "../Styles/list.css";
+import "../styles/list.css";
 
 const Mylist = () => {
   // useState hook to store the current task
