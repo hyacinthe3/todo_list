@@ -1,95 +1,164 @@
-body {
+body{
+    background-color: black;
+    body {
   background-color: black;
-  font-family: Poppins, sans-serif;
-  margin: 0;
-  padding: 0;
   color: white;
+  font-family: 'Poppins', sans-serif;
 }
 
 .hero-section {
   background-color: rgb(37, 46, 39);
   border-radius: 0.9rem;
-  padding: 1rem;
-  width: 100%;
-  max-width: 600px;
-  margin: auto;
+  padding: 2rem;
 }
 
-h1 {
-  font-weight: lighter;
-  font-size: 2rem;
-  text-align: center;
-  margin-bottom: 1rem;
+.task-row {
+  background-color: #111;
+  border-bottom: 1px solid rgb(182, 174, 63);
+  border-radius: 40px;
+  color: white;
 }
 
-.all {
+.action-icons span {
+  cursor: pointer;
+  font-size: 1.2rem;
+  width: 36px;
+  height: 36px;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
 }
 
+.custom-select {
+  background-color: black;
+  color: #d4d864;
+  border: 1px solid #d4d864;
+  text-align: center;
+}
+
+input,
+select {
+  background-color: black;
+}
+
+#input-task::placeholder {
+  color: #888;
+}
+ padding: 0;
+    margin: 0;
+}
+.hero-section{
+    background-color: rgb(37, 46, 39);
+    border-radius: 0.9rem;
+    padding: 0.5rem;
+    padding-left: 2rem;
+    Width: 1452px;
+    Height: 209px;
+}
+h1{
+    font-weight: lighter; 
+    font-family: Poppins;
+}
+
+.all{
+    display: flex;
+    justify-content: space-between;
+
+}
 .duration,
 .task,
 .butt {
-  flex: 1 1 100%;
-  margin-bottom: 8px;
+  margin-bottom: 8px; /* reduce space between divs */
 }
 
-select {
-  height: 3rem;
-  width: 100%;
-  max-width: 180px;
-  border-radius: 40px;
-  border: 1px solid #d4d864;
-  background-color: black;
-  color: #d4d864;
-  text-align: center;
-  appearance: none;
+select{
+    height: 3rem;
+    width: 180px;
+    border-radius: 40px;
+    border: 1px solid #d4d864;
+    background-color: black;
+    color: white;
+    text-align: center;
+    appearance: none;
+    color: #d4d864;
 }
-
-#input-task {
-  width: 100%;
-  height: 2.8rem;
-  border-radius: 40px;
+#input-task{
+    width: 646px;
+    height: 2.8rem;
+    border-radius: 40px;
   color: white;
-  padding-left: 20px;
-  border: 1px solid #d4d864;
-  background-color: black;
+  padding-left: 20px; /* Adds space inside the input */
+    border: 1px solid #d4d864;
+}
+input{
+        background-color: black;
+        align-content: space-around;
+}
+#but{
+    width: 150px;
+    height: 3rem;
+    background-color: #A5A763;
+    border-radius: 40px;
+    border: 1px solid #d4d864;
 }
 
-input {
-  background-color: black;
+.dur{
+    width: 560px;
+    height: 47px;
+    display: flex;
+    justify-content: space-between;
+    color: #a7a87c;
+   
+    margin-left: auto;
 }
 
-#but {
-  width: 100%;
-  max-width: 150px;
-  height: 3rem;
-  background-color: #A5A763;
-  border-radius: 40px;
-  border: 1px solid #d4d864;
-  color: black;
-  cursor: pointer;
+.alll{
+    width: 87px;
+    border: 1px solid #DADDFF;
+    border-radius: 40px;
+    /* padding-top: 13px; */
+    padding-right: 20px;
+    padding-bottom: 15px;
+    padding-left: px;
+}
+p{
+    margin-left: 1.8rem;
 }
 
+
+tr{
+    border-radius: 40rem;
+    /* box-shadow: 1px 1px 0px 0px  #d4d864; */
+
+    
+}
+
+
+
+
+butto{
+    background-color: #DADDFF;
+}
+
+
+
+/* Filter Buttons */
 .dur {
   display: flex;
   justify-content: center;
   gap: 15px;
   margin-bottom: 20px;
-  flex-wrap: wrap;
 }
 
 .filter-btn {
   background: #1f1f1f;
   color: white;
-  padding: 0.7rem 1.5rem;
+ padding-right: 30px;
   border-radius: 20px;
   cursor: pointer;
   border: 1px solid white;
   transition: background 0.3s;
-  font-size: 1rem;
 }
 
 .filter-btn:hover {
@@ -97,19 +166,21 @@ input {
   color: #111;
 }
 
+/* Task Row Styling */
 .task-row {
-  border-radius: 40px;
-  border-bottom: 1px solid rgb(182, 174, 63);
+ 
+  border-radius: 40px 40px 40px 40px;    /* Rounded bottom corners */
+   border-bottom: 1px solid rgb(182, 174, 63); /* Only bottom border */
   padding: 15px;
   margin-bottom: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #111;
   color: #f5f5f5;
-  flex-wrap: wrap;
+  background-color: #111;
 }
 
+/* Icons only (no button background or border) */
 .action-icons span {
   margin-left: 10px;
   cursor: pointer;
@@ -119,70 +190,8 @@ input {
   height: 30px;
   padding: 10px;
   border-radius: 50%;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .action-icons span:hover {
   color: whitesmoke;
-}
-
-/* Tablet (768px and below) */
-@media (max-width: 768px) {
-  .hero-section {
-    width: 90%;
-    padding: 1rem;
-  }
-
-  h1 {
-    font-size: 1.6rem;
-  }
-
-  .all {
-    flex-direction: column;
-  }
-
-  .duration,
-  .task,
-  .butt {
-    width: 100%;
-  }
-
-  .dur {
-    width: 100%;
-    gap: 10px;
-  }
-
-  #input-task,
-  select,
-  #but {
-    width: 100%;
-  }
-
-  .filter-btn {
-    font-size: 0.9rem;
-    padding: 0.5rem 1rem;
-  }
-}
-
-/* Mobile (480px and below) */
-@media (max-width: 480px) {
-  h1 {
-    font-size: 1.3rem;
-  }
-
-  .task-row {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .action-icons {
-    margin-top: 10px;
-  }
-
-  .filter-btn {
-    font-size: 0.8rem;
-    padding: 0.5rem 0.8rem;
-  }
 }
